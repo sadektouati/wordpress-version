@@ -1,0 +1,77 @@
+.vw_container{
+    font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.vw_container * {
+    font-family: 'Arial',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.vw_container .vw_entete{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fa5f4b;
+    margin: 1rem;
+}
+
+.vw_container .vw_date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .9em;
+}
+
+.vw_container .vw_mettre_a_jour{
+    color: #1aaaad;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #1aaaad;
+    border-radius: 1rem 0;
+    padding: 0.25rem 0.5rem;
+    transition: .2s all ease-in-out;
+}
+
+.vw_container .vw_mettre_a_jour:hover{
+    color: white;
+    background-color: #1aaaad;
+}
+
+.vw_container table{
+    border-collapse: collapse;
+    background-color: #ffffff99;
+    width: 100%;
+}
+
+.vw_container table :is(td, th){
+    text-align: initial;
+    border: 1px solid lightgray;
+    padding: .25rem .5rem;
+}
+
+.vw_container .vw_version .vw_etat {
+    font-weight: 600;
+    color: black;
+}
+
+.vw_container[color="yes"] .vw_version .vw_etat.latest {
+    color: rgb(2, 163, 2);
+}
+
+.vw_container[color="yes"] .vw_version .vw_etat.insecure {
+    color: red;
+}
+
+.vw_container[color="yes"] .vw_version .vw_etat.outdated {
+    color: orange;
+}
+
+.vw_container .vw_erreur {
+    color: red;
+    background-color: #ffc3c3;
+    padding: 0.25rem 1rem;
+    display: inline-block;
+}
