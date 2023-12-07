@@ -24,9 +24,6 @@ $wp_v_main_instance = new wp_v_main($wp_v_handle_api_instance, $wp_v_handle_vers
 
 $wp_v_enqueue_instance = new wp_v_enqueue($wp_v_main_instance);
 
-// Instantiate the class
-// $oophelloplugin = new wp_v_main_Batata($wp_v_handle_api);
-
 // // Initialize the plugin
 // add_action('plugins_loaded', array('Your_Plugin', 'get_instance'));
 
